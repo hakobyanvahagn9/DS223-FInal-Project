@@ -1,0 +1,88 @@
+---
+title: "Group Project Final"
+author: "R Group"
+date: "12/12/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(conjoint)
+library(agricolae)
+library(crossdes)
+library(AlgDesign)
+library(survival)
+library(support.CEs)
+library(ggplot2)
+library(caret)
+library(dplyr)
+library(stats)
+library(nnet)
+library(broom)
+```
+
+
+
+```{r}
+data = read.csv("camera.csv")
+dummy <- dummyVars(" ~ .", data=data)
+newdata <- data.frame(predict(dummy, newdata = data)) 
+```
+
+
+```{r} 
+#dummy data generation
+datalist = list()
+for (i in 1:100) {
+    dat <- newdata[sample(nrow(newdata), 36), ]
+    dat$id <- i  
+    datalist[[i]] <- dat 
+}
+big_data <- dplyr::bind_rows(datalist)
+big_data$RES <- floor(runif(3600, min=0, max=2))
+for (i in 1:3599){
+  for (j in (i+1):3600){
+    
+    if ((big_data$id[i] == big_data$id[j]) && (big_data$QES[i] == big_data$QES[j]) && (big_data$RES[i] == big_data$RES[j])){
+      
+      if (big_data$RES[i] == 1){
+        big_data$RES[i] = 0
+      }
+      else{
+        big_data$RES[i] = 1
+      }
+    }
+  }
+}
+colnames(big_data)
+
+big_data$gender <- c(rep("Male", 1/3*3600), rep("Female", 1/3*3600), rep("Other", 1/3*3600))
+big_data$age_group <- c(rep("18-",0.25*3600),rep("19-30",0.25*3600),rep("31-50",0.25*3600),rep("50+",0.25*3600))
+
+big_data1 <- subset(big_data, select = c(-BLOCK, -QES, -ALT, -id, -gender, -age_group))
+
+big_data1
+```
+
+```{r}
+model_multinomLogit <- multinom(data = big_data1, RES ~.)
+summary(model_multinomLogit)
+multi_df <- tidy(model_multinomLogit)
+multi_df
+```
+
+```{r}
+model_bayesian <- glm(formula = RES ~., data = big_data1, family = binomial(link = 'logit'))
+summary(model_bayesian)
+bayes_df <- tidy(model_bayesian)
+bayes_df
+```
+
+```{r}
+choice1 <- 1 + bayes_df$estimate[bayes_df$term==("BrandCanon")] + bayes_df$estimate[bayes_df$term==("Sensor.SizeAPS.H..27.9x18.6mm")] + 
+choice1
+```
+

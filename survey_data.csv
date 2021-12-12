@@ -1,0 +1,91 @@
+"Description","ALT1","ALT2","QES","BLOCK"
+"Brand","Nikon","Sony",1,1
+"Sensor Size","Full-Frame","APS-H",1,1
+"Camera Type","DSLR","Mirrorless",1,1
+"Resolution","12 megapixel","64 megapixel",1,1
+"Price","$2,000","$1,000",1,1
+"Brand","Canon","Nikon",2,1
+"Sensor Size","APS-C","Full-Frame",2,1
+"Camera Type","DSLR","Mirrorless",2,1
+"Resolution","24 megapixel","12 megapixel",2,1
+"Price","$3,000","$2,000",2,1
+"Brand","Nikon","Sony",3,1
+"Sensor Size","APS-C","Full-Frame",3,1
+"Camera Type","DSLR","Mirrorless",3,1
+"Resolution","12 megapixel","64 megapixel",3,1
+"Price","$1,000","$3,000",3,1
+"Brand","Nikon","Sony",4,1
+"Sensor Size","APS-C","Full-Frame",4,1
+"Camera Type","DSLR","Mirrorless",4,1
+"Resolution","64 megapixel","24 megapixel",4,1
+"Price","$3,000","$2,000",4,1
+"Brand","Canon","Nikon",5,1
+"Sensor Size","APS-C","Full-Frame",5,1
+"Camera Type","Mirrorless","DSLR",5,1
+"Resolution","64 megapixel","24 megapixel",5,1
+"Price","$2,000","$1,000",5,1
+"Brand","Sony","Canon",6,1
+"Sensor Size","APS-H","APS-C",6,1
+"Camera Type","DSLR","Mirrorless",6,1
+"Resolution","64 megapixel","24 megapixel",6,1
+"Price","$1,000","$3,000",6,1
+"Brand","Nikon","Sony",7,1
+"Sensor Size","APS-H","APS-C",7,1
+"Camera Type","Mirrorless","DSLR",7,1
+"Resolution","64 megapixel","24 megapixel",7,1
+"Price","$2,000","$1,000",7,1
+"Brand","Canon","Nikon",8,1
+"Sensor Size","Full-Frame","APS-H",8,1
+"Camera Type","Mirrorless","DSLR",8,1
+"Resolution","64 megapixel","24 megapixel",8,1
+"Price","$1,000","$3,000",8,1
+"Brand","Sony","Canon",9,1
+"Sensor Size","APS-C","Full-Frame",9,1
+"Camera Type","Mirrorless","DSLR",9,1
+"Resolution","24 megapixel","12 megapixel",9,1
+"Price","$1,000","$3,000",9,1
+"Brand","Canon","Nikon",10,1
+"Sensor Size","APS-H","APS-C",10,1
+"Camera Type","DSLR","Mirrorless",10,1
+"Resolution","24 megapixel","12 megapixel",10,1
+"Price","$2,000","$1,000",10,1
+"Brand","Sony","Canon",11,1
+"Sensor Size","APS-C","Full-Frame",11,1
+"Camera Type","Mirrorless","DSLR",11,1
+"Resolution","12 megapixel","64 megapixel",11,1
+"Price","$2,000","$1,000",11,1
+"Brand","Nikon","Sony",12,1
+"Sensor Size","Full-Frame","APS-H",12,1
+"Camera Type","Mirrorless","DSLR",12,1
+"Resolution","24 megapixel","12 megapixel",12,1
+"Price","$1,000","$3,000",12,1
+"Brand","Canon","Nikon",13,1
+"Sensor Size","Full-Frame","APS-H",13,1
+"Camera Type","Mirrorless","DSLR",13,1
+"Resolution","12 megapixel","64 megapixel",13,1
+"Price","$3,000","$2,000",13,1
+"Brand","Sony","Canon",14,1
+"Sensor Size","APS-H","APS-C",14,1
+"Camera Type","Mirrorless","DSLR",14,1
+"Resolution","12 megapixel","64 megapixel",14,1
+"Price","$3,000","$2,000",14,1
+"Brand","Canon","Nikon",15,1
+"Sensor Size","APS-H","APS-C",15,1
+"Camera Type","DSLR","Mirrorless",15,1
+"Resolution","12 megapixel","64 megapixel",15,1
+"Price","$1,000","$3,000",15,1
+"Brand","Nikon","Sony",16,1
+"Sensor Size","APS-H","APS-C",16,1
+"Camera Type","Mirrorless","DSLR",16,1
+"Resolution","24 megapixel","12 megapixel",16,1
+"Price","$3,000","$2,000",16,1
+"Brand","Sony","Canon",17,1
+"Sensor Size","Full-Frame","APS-H",17,1
+"Camera Type","DSLR","Mirrorless",17,1
+"Resolution","24 megapixel","12 megapixel",17,1
+"Price","$2,000","$1,000",17,1
+"Brand","Sony","Canon",18,1
+"Sensor Size","Full-Frame","APS-H",18,1
+"Camera Type","DSLR","Mirrorless",18,1
+"Resolution","64 megapixel","24 megapixel",18,1
+"Price","$3,000","$2,000",18,1
