@@ -114,7 +114,7 @@ ui <- fluidPage(
                  mainPanel(
                    tabsetPanel(
                      tabPanel("Multinom Logit", plotOutput("logit_tab")), 
-                     tabPanel("Bayes", DTOutput("bayes_tab"))
+                     tabPanel("Bayes", renderTable("bayes_tab"))
                    )
                  )
                )
