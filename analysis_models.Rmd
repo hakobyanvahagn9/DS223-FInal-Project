@@ -75,7 +75,7 @@ multi_df
 ```
 
 ```{r}
-model_bayesian <- glm(formula = RES ~., data = big_data1, family = binomial(link = 'logit'))
+model_bayesian <- stan_glm(formula = RES ~., data = big_data1, family = binomial(link = 'logit'))
 summary(model_bayesian)
 bayes_df <- tidy(model_bayesian)
 bayes_df
